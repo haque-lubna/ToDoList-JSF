@@ -14,8 +14,8 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 @Scope(value = "session")
-@Component(value = "taskList")
-@ELBeanName(value = "taskList")
+@Component(value = "taskListController")
+@ELBeanName(value = "taskListController")
 @Join(path = "/", to = "/")
 public class TaskListController {
     @Autowired

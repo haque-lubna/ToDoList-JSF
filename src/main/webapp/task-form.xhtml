@@ -9,11 +9,13 @@
         <h:form id="productForm">
             <p:panel header="Product Details">
                 <h:panelGrid columns="1">
-                    <p:outputLabel for="name" value="Name: " />
-                    <p:inputText id="name" value="#{productController.product.name}" />
-                    <p:outputLabel for="price" value="Price: " />
-                    <p:inputNumber id="price" value="#{productController.product.price}" />
-                    <h:commandButton value="Save" action="#{productController.save}" />
+                    <p:outputLabel for="title" value="Name: " />
+                    <p:inputText id="title" value="#{taskNewController.task.title}" />
+                    <p:outputLabel for="reminder" value="Price: " />
+                    <p:inputNumber id="reminder" value="#{taskNewController.task.reminder}" />
+                    <p:outputLabel for="timeDate" value="Price: " />
+                    <p:inputNumber id="timeDate" value="#{taskNewController.task.timeDate}" />
+                    <h:commandButton value="Save" action="#{taskNewController.saveTask}" />
                 </h:panelGrid>
             </p:panel>
         </h:form>

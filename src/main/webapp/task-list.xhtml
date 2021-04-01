@@ -10,20 +10,20 @@
     <ui:define name="content">
         <h:form id="form">
             <p:panel header="Products List">
-                <p:dataTable id="table" var="product" value="#{productList.products}">
+                <p:dataTable id="table" var="task" value="#{taskListController.taskList}">
                     <p:column>
                         <f:facet name="header"># Id</f:facet>
-                        <h:outputText value="#{product.id}" />
+                        <h:outputText value="#{task.id}" />
                     </p:column>
 
                     <p:column>
                         <f:facet name="header">Name</f:facet>
-                        <h:outputText value="#{product.name}" />
+                        <h:outputText value="#{task.name}" />
                     </p:column>
 
                     <p:column>
                         <f:facet name="header">Price</f:facet>
-                        <h:outputText value="#{product.price}">
+                        <h:outputText value="#{task.price}">
                             <f:convertNumber type="currency" currencySymbol="$ " />
                         </h:outputText>
                     </p:column>
