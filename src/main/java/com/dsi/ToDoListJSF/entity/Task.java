@@ -25,10 +25,4 @@ public class Task {
         this.name = name;
         this.price = price;
     }
-//    @Id
-//    @GeneratedValue(strategy = GenerationType.AUTO)
-//    private int id;
-//    private String title;
-//    private boolean reminder;
-//    private String dateTime;
 }

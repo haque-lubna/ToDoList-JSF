@@ -12,7 +12,6 @@ import javax.faces.webapp.FacesServlet;
 import javax.servlet.DispatcherType;
 import java.util.EnumSet;
 
-//@SpringBootApplication
 @EnableAutoConfiguration
 @ComponentScan({"com.dsi.ToDoListJSF"})
 public class ToDoListJSFApplication {
