@@ -3,7 +3,6 @@ package com.dsi.ToDoListJSF;
 import org.ocpsoft.rewrite.servlet.RewriteFilter;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.annotation.Bean;
@@ -16,10 +15,10 @@ import java.util.EnumSet;
 //@SpringBootApplication
 @EnableAutoConfiguration
 @ComponentScan({"com.dsi.ToDoListJSF"})
-public class ToDoListJsfApplication {
+public class ToDoListJSFApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ToDoListJsfApplication.class, args);
+		SpringApplication.run(ToDoListJSFApplication.class, args);
 	}
 
 	@Bean
