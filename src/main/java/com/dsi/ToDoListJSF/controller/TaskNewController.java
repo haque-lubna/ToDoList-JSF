@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 @Scope(value = "session")
 @Component(value = "taskNewController")
 @ELBeanName(value = "taskNewController")
-@Join(path = "/", to="/task-form.jsf")
+@Join(path = "/new", to = "/task-new-form.jsf")
 public class TaskNewController {
     @Autowired
     private TaskRepository taskRepository;
@@ -21,7 +21,7 @@ public class TaskNewController {
         taskRepository.save(task);
         task = new Task();
 
-        return "/";
+        return "/task-list.xhtml?faces-redirect=true";
     }
 
     public Task getTask(){

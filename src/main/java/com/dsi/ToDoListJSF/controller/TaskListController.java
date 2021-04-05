@@ -14,22 +14,21 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 @Scope(value = "session")
-@Component(value = "taskListController")
-@ELBeanName(value = "taskListController")
-@Join(path = "/", to = "/")
+@Component(value = "taskList")
+@ELBeanName(value = "taskList")
+@Join(path = "/", to = "/task-list.jsf")
 public class TaskListController {
     @Autowired
     private TaskRepository taskRepository;
-    private List<Task> taskList;
+    private List<Task> tasks;
 
     @Deferred
     @RequestAction
     @IgnorePostback
     public void loadData(){
-        taskList = taskRepository.findAll();
+        tasks = taskRepository.findAll();
     }
-
-    public List<Task> getTaskList(){
-        return taskList;
+    public List<Task> getTasks(){
+        return tasks;
     }
 }

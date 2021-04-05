@@ -6,15 +6,13 @@
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets" xmlns:p="http://primefaces.org/ui">
 <ui:composition template="layout.xhtml">
     <ui:define name="content">
-        <h:form id="productForm">
-            <p:panel header="Product Details">
+        <h:form id="taskForm">
+            <p:panel header="Task Details">
                 <h:panelGrid columns="1">
-                    <p:outputLabel for="title" value="Name: " />
-                    <p:inputText id="title" value="#{taskNewController.task.title}" />
-                    <p:outputLabel for="reminder" value="Price: " />
-                    <p:inputNumber id="reminder" value="#{taskNewController.task.reminder}" />
-                    <p:outputLabel for="timeDate" value="Price: " />
-                    <p:inputNumber id="timeDate" value="#{taskNewController.task.timeDate}" />
+                    <p:outputLabel for="name" value="Name: " />
+                    <p:inputText id="name" value="#{taskNewController.task.name}" />
+                    <p:outputLabel for="price" value="Price: " />
+                    <p:inputNumber id="price" value="#{taskNewController.task.price}" />
                     <h:commandButton value="Save" action="#{taskNewController.saveTask}" />
                 </h:panelGrid>
             </p:panel>

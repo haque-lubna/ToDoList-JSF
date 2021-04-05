@@ -2,18 +2,33 @@ package com.dsi.ToDoListJSF.entity;
 
 import lombok.Data;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.math.BigDecimal;
 
 @Entity
 @Data
 public class Task {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
-    private String title;
-    private boolean reminder;
-    private String dateTime;
+    private Long id;
+
+    @Column
+    private String name;
+
+    @Column
+    private BigDecimal price;
+
+    public Task() {
+    }
+
+    public Task(String name, BigDecimal price) {
+        this.name = name;
+        this.price = price;
+    }
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.AUTO)
+//    private int id;
+//    private String title;
+//    private boolean reminder;
+//    private String dateTime;
 }

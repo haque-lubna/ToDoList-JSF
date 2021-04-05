@@ -1,6 +1,6 @@
-INSERT INTO task (id, title, reminder, date_time) VALUES (1000, 'Reading', true, '');
-INSERT INTO task (id, title, reminder, date_time) VALUES (1001, 'Reading', false, '');
-INSERT INTO task (id, title, reminder, date_time) VALUES (1002, 'Reading', false, '');
-INSERT INTO task (id, title, reminder, date_time) VALUES (1003, 'Reading', true, '');
-INSERT INTO task (id, title, reminder, date_time) VALUES (1004, 'Reading', false, '');
-INSERT INTO task (id, title, reminder, date_time) VALUES (1005, 'Reading', true, '');
+INSERT INTO task (id, name, price) values (1000, 'rice', 25);
+INSERT INTO task (id, name, price) values (1001, 'juice', 100);
+INSERT INTO task (id, name, price) values (1002, 'rice', 50);
+INSERT INTO task (id, name, price) values (1003, 'oil', 100);
+INSERT INTO task (id, name, price) values (1004, 'ata', 22);
+INSERT INTO task (id, name, price) values (1005, 'chiken', 99);
