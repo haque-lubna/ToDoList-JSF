@@ -11,8 +11,6 @@ public class Task {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private String name;
-    private BigDecimal price;
     private String title;
     private String timeDate;
     private Boolean reminder;
