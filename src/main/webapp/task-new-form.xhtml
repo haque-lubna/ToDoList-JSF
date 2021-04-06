@@ -12,7 +12,8 @@
                     <p:outputLabel for="title" value="Title: " />
                     <p:inputText id="title" value="#{taskNewController.task.title}" />
                     <p:outputLabel for="reminder" value="Reminder: " />
-                    <p:inputText id="reminder" value="#{taskNewController.task.reminder}" />
+                    <h:selectBooleanCheckbox id="reminder"
+                                             value="#{taskNewController.task.reminder}" />
                     <p:outputLabel for="timeDate" value="Time and Date: " />
                     <p:inputText id="timeDate" value="#{taskNewController.task.timeDate}" />
                     <h:commandButton value="Save" action="#{taskNewController.saveTask}" />
