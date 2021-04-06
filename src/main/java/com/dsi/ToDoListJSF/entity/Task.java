@@ -3,7 +3,7 @@ package com.dsi.ToDoListJSF.entity;
 import lombok.Data;
 
 import javax.persistence.*;
-import java.math.BigDecimal;
+import java.util.Date;
 
 @Entity
 @Data
@@ -12,6 +12,6 @@ public class Task {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String title;
-    private String timeDate;
+    private Date timeDate;
     private Boolean reminder;
 }
